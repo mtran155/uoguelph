@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Networking Lab</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <style type="text/css">
+        h3 {background-color: rgba(255, 102, 0, 1); padding: 0px; margin: 0px; color:#FFFFFF; text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;}
+	h1{text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;}
+	p{text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;}
+	#button{ background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%); 
+		 background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );
+		 background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
+		 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");	background: -o-linear-gradient(top,#005fbf,003f7f);
+		 background-color:#005fbf; border:0px solid #000000; text-align:center; border-width:0px 0px 1px 1px; font-size:14px; font-family:Comic Sans MS; font-weight:bold; color:#ffffff;
+	       }
+	#navbar{padding: 0px; margin: 0px;}
+	#sched{background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%); 
+		 background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );
+		 background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
+		 filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");	background: -o-linear-gradient(top,#005fbf,003f7f);
+		 background-color:#005fbf; border:0px solid #000000; text-align:center; border-width:0px 0px 1px 1px; font-size:14px; font-family:Comic Sans MS; font-weight:bold; color:#ffffff; }
+    </style>
+    
+  </head>
+
+  <body>
+
+    <nav id="navbar" class="navbar navbar-default " role="navigation">
+        <div class="container-fluid" style="">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/" style="font-family:Serif; color: white; 20px" >Home</a>
+            </div>
+            <a class="navbar-brand" href="/ranking.html" style="font-family:Serif; color: white; 20px" >Weekly Rankings</a>
+            <a class="navbar-brand" href="/projections.html" style="font-family:Serif; color: white; 20px" >Weekly Projections</a>
+
+            <div class="navbar-right">
+                <a class="navbar-brand" href="https://twitter.com/miketran15"><img src="/img/icon_twitter2.png"/></a>
+                <a class="navbar-brand" href="http://instagram.com/mtran15"><img src="/img/Instagram 3 Active.png"/> </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class ="row" id = "sched">
+    </div>
+
+    <div class="container center-block">
+
+        <center>
+            <div style ="color:#FFDE00">
+                <center>
+                    <h1 style = "font-family: Serif"><strong>Weekly Projections</strong></h1>
+                    
+                </center>
+            </div>
+        </center>
+
+        <center>
+            <select name = "week" class = "btn btn-info" id="button">
+                <option value="10">Week</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+		<option value="11">11</option>
+            </select>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" onclick =projections("QB")>QB</button>
+                <button type="button" class="btn btn-default" onclick =projections("WR")>WR</button>
+                <button type="button" class="btn btn-default" onclick =projections("RB")>RB</button>
+                <button type="button" class="btn btn-default" onclick =projections("TE")>TE</button>
+                <button type="button" class="btn btn-default" onclick =projections("K")>K</button>
+                <button type="button" class="btn btn-default" onclick =projections("DEF")>DEF</button>
+            </div>
+        </center>
+
+        <br></br>
+        
+        <div id = "table"></div>
+
+    </div>
+
+    <br></br>
+
+    <footer>
+        <center>
+            <p style = "font-family:Serif; font-size: 25px; color: #FFDE00"><strong>Created by:</strong> Michael Tran</p>
+            <p style = "font-family:Serif; font-size: 25px; color: #FFDE00"><strong>Student #:</strong> 0524704</p>
+        </center>
+    </footer>
+
+  </body>
+</html>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/sorttable.js"></script>
