@@ -1,0 +1,13 @@
+Readme for Assignment 2 (Hangman Game)
+---------------------------------------
+Notes on the program
+---------------------
+
+- When you start the game it will ask you if you want to provide a file or not. If you chose not to provide a file
+I have set the game to load up a default file. The default file contains the words found in the legacy code dictionary.
+Than it will ask you what the max length of a word can be. If you use your own file and you wanted the max word length to be 
+2 and the file only has words with max length of 3 or greater, program will raise an exception and exit. So make sure the text
+file has all length of words and you should encounter no problems. The dictionary a2dict.txt that Mr. Wirth gave to us works fine. 
+
+- When the game is generating a new word, it might look like it's sitting there doing nothing. Give it time and it will select 
+a new random word for you to play.

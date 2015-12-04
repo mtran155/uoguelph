@@ -1,0 +1,8 @@
+CIS 3190 Software Legacy Systems
+Assignment 3
+Michael Tran 0524704
+
+*******
+NOTES
+*******
+	- I have included a makefile where you can just type 'make run' and it'll compile and run the program for you
