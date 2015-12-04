@@ -1,0 +1,25 @@
+type = Book
+callnumber = QA76.73.J38S265
+authors = Walter Savitch, Kenrich Mock
+title = Absolute Java
+publisher = Addison-Wesley
+year = 2009
+
+type = Journal
+callnumber = P98.C6116
+title = Computational Linguistics
+organization = Association for Computational Linguistics
+year = 2008
+
+type = Book
+callnumber = QA76.64.c62
+authors = 
+title = Object Oriented Programming
+publisher = Yourdon Press
+year = 2006
+
+type = Journal
+callnumber = QA76.A772
+title = Communications of the ACM
+organization = Association for Computing Machinery
+year = 2005

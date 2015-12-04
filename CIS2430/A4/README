@@ -1,0 +1,146 @@
+README
+
+Michael Tran          0524704
+
+CIS2430               Assignment 4
+
+
+*****************************
+Purpose of Library Search
+*****************************
+
+We were tasked to build a GUI for our library search and use exception handling so that the system will be more robust and user-friendly.
+
+*****************************
+Assumptions and Limitations
+*****************************
+
+Assumptions: User is inputting a file to read from and a file to write to through the command line. Moreover, the user is following the instructions that are given to them through the GUI. Also if user wants to save all references added, must use the option save and exit to do so, otherwise references will not be saved.
+
+Limitations: The GUI may not look like what is intended on different machines due to different resolutions of screen of the machine.
+
+Note: Gui was built on a Windows based machine, with a screen resolution of 1366 x 768.
+
+*****************************
+How  to compile the program
+*****************************
+
+In netbeans you would go to the tab File->Project Properties and click on the run tab Run and input the files into the arguments. After you go to the tab Run->Run Project to compile and use the program.
+
+Through the command line 
+1. Compile to byte-code: javac LibrarySearch.java
+2. Run from a class file: java LibrarySearch <input><output>
+
+
+*************
+User Guide
+*************
+
+The user has the ability to load pre-exisiting references from a file at the start of the program and be able to save them to a different file at the end of the program.
+
+The user will be met with a GUI, and the user can either 'Add', 'Search' or 'Quit'. The user will be given brief instructions how to use the program. When the user chooses the add command, they are presented with a interface with fields they can fill out. The same occurs when the user chooses the search command. 
+
+For searching a year, if user just wants to search one year they must fill in Start Year and End Year with the same year. Example Start Year = 2002 so End Year must have 2002 in it's field. Otherwise if the user just fills out one of the fields it will be handled by a range. Example Start Year = 2002, all references will be searched with a year of 2002 and greater and vice versa for End Year. The user can also search inbetween range such as 2002-2010, this will only look for references with those years.
+
+Two new commands were implemented for the user. One being the home button which returns the user back to the home screen. The other being the save and exit button. This allows the user to save all the references added during the use of the program, and exit the program at the same time. This means that if the user decides to only exit, the references are not saved. This also happens when user tries to exit the program from clicking the 'X' on the window. However, the user has to confirm that they want to exit while not saving the references.
+
+
+************
+Test Plan
+************
+
+(1) Loading exisiting references from a file at the start and save all references to another file at the end of the program. 
+
+
+(2) GUI launches at the beginning of the program
+
+(a) the GUI closes when pressing the X button on the window
+
+(b) a confirmation window appears to check if user wants to exit
+
+(c) the main window shows a welcome message and a brief instruction how to use the system.
+
+
+(3) "add" Panel:
+
+(a) option check: a combo box is present to allow user to choose either to add a book or a journal
+
+(aa) when user chooses to add a journal certain fields dissappear and vice versa for a book.
+
+(b) validity check: make sure user inputs a call number, title and year for both book and journal.
+
+(c) duplicate check: if a call number and a year are not unique to respective array list, reject the new record as a duplicate.
+
+(d) the add panel looks like what is required for the assignment
+
+(e) the reset button clears all the fields
+
+(f) the add button adds the reference 
+
+(g) pop up warnings for user to fill in certain fields if left blank (callNumber, Title and year)
+
+
+(4) "search" Panel:
+
+(a) test for single words and multiple words as search requests.
+
+(b) test for no match and multiple matches for the stored records.
+
+(c) test for words with different combinations of cases such as "java", "Java", and "JAVA".
+
+(d) test for word level matches.  For example, "program" and "programming" are not a match at the word level.
+
+(e) test for when user leaves all search parameters empty and prints out entire records from both lists.
+
+(f) test for when user only searches call number and all matching call numbers are printed from both lists
+
+(g) test for when user only searches one year and all matching years are printed out from both lists
+
+(h) test for when user searches a range of year and all matching years are printed out from both lists
+
+(i) test for when user only searches by keywords that all matching keywords are printed out from both lists
+
+(j) test for when user searches with a combination of callnumber, year, and keywords
+
+(k) the search panel looks like what is required for the assignment
+
+(l) the reset button clears all the fields
+
+(m) the search button searches for the references
+
+(n) pop up warning for invalid input for searching years
+
+
+(5) exiting the program:
+
+(a) when user chooses save and exit all references are saved and the program closes
+
+(b) when user chooses exit the program closes without saving references
+
+(c) when user clicks 'X'  on the window a confirmation windows pops up and warns the user that references will not be saved by exiting this way
+
+
+*****************
+BONUS CONTENT
+*****************
+
+(1) I included a save and exit button to allow the user to save all references added while running the program and exit from the program.
+
+(2) I included a home button to allow user to go back to home screen.
+
+(3) I have added visuals to the menu bar, so there are images for home, add, search, save and exit, and exit menu items.
+
+(4) I added a confirmation window, warning the user if they exit without using the save and exit option their references would not be saved
+
+(5) Most of the layout for each interface was done manually without using predefined layouts.
+
+(6) I set the background of each panel to the colour Orange, the buttons to the colour Red and have the text Black as these are our Universities colours.
+
+(7) I made warnings pop up when an invalid input is made for add and search.
+
+
+***********************
+Possible Improvements
+***********************
+
+
