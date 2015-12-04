@@ -1,0 +1,19 @@
+Complete this file and place it in the root folder of your archive (or your submission will NOT be marked).
+
+------------------------
+
+"I have read and understood the University's policy on academic integrity that is referenced from the course outline. I assert this work is my own, and I appropriately acknowledge any and all material I have used as a source for ideas."
+
+------------------------
+
+LAST NAME: Tran
+FIRST NAME: Michael
+STUDENT ID: 0524704
+E-MAIL: mtran04@uoguelph.ca
+
+COURSE: CIS*2520
+ASSIGNMENT #: 3
+DATE: Nov 6, 2013
+
+ACKNOWLEDGMENTS: 
+(You need not acknowledge the recommended or required textbook, the lecture or lab notes, your instructor or TA.)
